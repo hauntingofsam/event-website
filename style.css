@@ -66,6 +66,8 @@ section{
     color:white;
     text-align: center;
     font-family: 'Bree Serif', serif;
+    animation-name: left;
+    animation-duration: 3s;
 
 }
 #home h3{
@@ -73,6 +75,8 @@ section{
     color:white;
     text-align: center;
     font-family: 'Bree Serif', serif;
+    animation-name: right;
+    animation-duration: 3s;
 }
 .h-2{
     margin:20px;
@@ -88,6 +92,19 @@ section{
 }
 .name{
     text-align: center;
+    animation-name: down;
+    animation-duration: 3s;
+}
+
+@keyframes left {
+    from{transform: translate(-250px, 0);}
+}
+@keyframes right {
+    from{transform: translate(250px, 0);}
+
+}
+@keyframes down {
+    from{transform: translate(0, 50px);}
 }
 .text{
     font-family: 'Bree Serif', serif;
