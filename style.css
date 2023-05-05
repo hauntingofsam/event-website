@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    /* background-image: url(bg1.jpg); */
+    background-image: linear-gradient(135deg,rgb(185, 185, 252), rgb(201, 63, 143));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    align-items: center;
+    display:flex;
+    z-index: 2;
+    flex-direction: row;
+    background-color: rgba(19, 57, 137, 0.5);
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(40, 8, 8);
+
+    
+}
+#logo img{
+    width: 72px;
+    padding: 10px;
+}
+#navbar ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+#navbar ul li{
+    list-style:none;
+    font-size:large;
+
+
+}
+#navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(171, 54, 207);
+
+}
+#navbar ul li a{
+    color:rgb(0, 0, 0);
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+section{
+    padding-top: 80px;
+}
+#home{
+    margin: auto;
+    background-color: rgba(126, 222, 254, 0.2);
+}
+#home h2{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+#home h3{
+    margin:30px;
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.h-2{
+    margin:20px;
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 2px;
+    padding-top: 0px;
+}
+.h-3{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.0rem;
+    padding: 12px;
+}
+.name{
+    text-align: center;
+}
+.text{
+    font-family: 'Bree Serif', serif;
+    font-size:3.8rem;
+    color:white;
+    align-self: flex-end;
+    padding-bottom:6px;
+}
+.image{
+    width: 36px;
+}
+.dates{
+    padding-top:25px;
+    text-align: center;
+}
+.date{
+    font-family: 'Bree Serif', serif;
+    font-size:1.5rem;
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    
+
+}
+#about{
+    padding:3px 10%;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 50px;
+}
+.details{
+    padding: 40px 40px;
+    background-color: rgb(110, 36, 175);
+    border-radius: 30px;
+    opacity:0.8;
+}
+.aboutdetails{
+    font-family: 'Bree Serif', serif;
+    font-size:30px;
+    color:white;
+
+}
+#tracks{
+    margin: 34px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#tracks .box{ 
+    border: 4px solid rgb(107, 5, 155);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    width: 150px;
+    /* width: 300px; */
+}
+#tracks .box img{ 
+    height: 160px;
+    margin: auto;
+    display: block;
+ }
+
+ #timeline{
+    margin: 34px;
+    display: flex;
+    flex-direction: column;
+}
+#timeline .box{ 
+    /* border: 1px solid rgb(107, 5, 155); */
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 8px;
+    background: #cfb525;
+    margin-bottom: 20px;
+    
+}
+
+#spons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.spons-item{
+    padding: 18px;
+}
+
+#spons img{
+    width: 200px;
+}
+
+
+#prizes{
+    display: flex;
+    flex-direction: column;
+    padding:3px 10px;
+    /* height:500px; */
+    justify-content: center;
+    align-items: center;
+   
+    margin-top:135px;
+
+}
+.aboutprizes{
+
+    display:flex;
+    text-align:center;
+    padding: 30px;
+    
+    
+
+}
+.aboutprizes:hover{
+    
+    background-color: rgb(117, 4, 145, 0.8);
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.prizedetails{
+    font-family: 'Bree Serif', serif;
+    font-size:20px;
+    color:white;
+
+}
+
+
+
+
+.wrapper {
+    padding:0px;
+    max-width: 80%;
+    margin:auto;
+    
+}
+.accordion {
+    background-color:rgb(117, 4, 145);
+    font-family: 'Bree Serif', serif;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.accordion i {
+    font-size: 1rem;
+}
+  
+.active,
+.accordion:hover {
+    border-radius: 25px;
+    background-color: #be4ac2;
+}
+.panel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: rgb(117, 4, 145);
+    overflow: hidden;
+    background-color: #be4ac2;
+    display: none;
+    border-radius: 25px;
+}
+.panel p {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin:auto;
+    
+}
+  
+.faq {
+    margin: 10px 0;
+}
+
+.faqtext{
+    font-family: 'Bree Serif', serif;
+    color:white;
+    font-size: 1.5rem;
+    text-align:center;
+
+}
+
+
+
+
+
+
+#contacts{
+    display: flex;
+    flex-direction: column;
+    padding:3px 50px;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top:135px;
+    background-color: black;
+
+}
+.phemail{
+    text-align:center;
+    padding:20px;
+    
+    
+
+}
+.phemail:hover{
+   
+    background-color: rgba(97, 97, 97, 0.8);
+    border-radius: 20px;
+}
+.contactdets{
+    font-family: 'Bree Serif', serif;
+    font-size:1rem;
+    color:white;
+
+}
+
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    color:white;
+    font-size: 2rem;
+    padding: 12px;
+    padding-top: 40px;
+    
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    padding: 2px;
+    color:rgb(107, 5, 155);
+}
+.center{
+    text-align:center;
+}
