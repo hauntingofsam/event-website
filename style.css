@@ -96,8 +96,9 @@ section{
     align-self: flex-end;
     padding-bottom:6px;
 }
-.image{
-    width: 36px;
+#home .name img{
+    width: 56px;
+    transform: translate(0, 12px);
 }
 .dates{
     padding-top:25px;
